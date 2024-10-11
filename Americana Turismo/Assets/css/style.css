@@ -1,0 +1,165 @@
+* {
+    margin: 0; /* Remove a margem padrão de todos os elementos */
+    padding: 0; /* Remove o preenchimento padrão de todos os elementos */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; /* Define a fonte padrão da página */
+}
+
+body {
+    background-color: rgb(255, 177, 75);
+    font-family: 'Passero One', sans-serif; /* Fonte padrão do corpo */
+}
+
+.tur-am h2,
+.pt-tur h2,
+.parceiros h2 {
+    font-family: 'Passero One', sans-serif; /* Aplica a fonte Passero One nos títulos */
+    font-size: 24px; /* Ajuste o tamanho conforme necessário */
+}
+
+.Logo {
+    width: 150px; /* Define a largura da classe Logo */
+    padding: 60px;
+}
+
+#pagina-home {
+    height: 613px; /* Define a altura da seção da página inicial */
+    background: linear-gradient(rgba(17, 17, 15, 0.404), rgba(34, 30, 4, 0.685)), url(../img/banner.png); /* Aplica um gradiente de fundo com uma imagem */
+    background-size: cover; /* Faz com que a imagem de fundo cubra todo o elemento */
+    border-top: 4px solid rgb(109, 109, 109);
+    border-left: 4px solid rgb(109, 109, 109);
+    border-right: 4px solid rgb(109, 109, 109);
+}
+
+.menu-principal ul {
+    list-style: none; /* Remove os marcadores de lista padrão */
+}
+
+.menu-principal ul li {
+    display: inline-block; /* Exibe os itens da lista em linha, em vez de verticalmente */
+}
+
+.menu-principal ul li a {
+    color: rgb(0, 0, 0); /* Define a cor do texto do link */
+    text-decoration: none; /* Remove o sublinhado dos links */
+    text-transform: uppercase; /* Transforma o texto dos links em letras maiúsculas */
+    padding: 5px 20px; /* Define o preenchimento interno dos links */
+    border: 1px solid transparent; /* Define uma borda transparente para evitar mudanças de layout ao passar o mouse */
+    transition: 0.6s ease; /* Define uma transição suave para alterações de estilo */
+    font-family: 'Passero One', sans-serif; /* Aplica a fonte Passero One aos links do menu */
+}
+
+.menu-principal ul li a:hover {
+    background-color: white; /* Altera a cor de fundo para branco ao passar o mouse */
+    color: black; /* Altera a cor do texto para preto ao passar o mouse */
+    transform: scale(1.05);
+}
+
+.categoria {
+    display: flex; /* Define um contêiner flexível para os itens da categoria */
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+    justify-content: space-between; /* Espaça os itens igualmente entre si */
+    gap: 10px;
+}
+
+@media (max-width: 768px) {
+    .menu-principal ul li {
+        display: block; /* Exibe os itens verticalmente em telas menores */
+        text-align: center;
+    }
+}
+
+.tur-am {
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    border-top: 4px solid rgb(109, 109, 109);
+    border-left: 4px solid rgb(109, 109, 109);
+    border-right: 4px solid rgb(109, 109, 109);
+}
+
+.btn {
+    margin: 10px;
+    border: 1px solid white;
+    padding: 10px 80px;
+    color: white;
+    text-decoration: none;
+    transition: 0.6 ease;
+}
+
+.btn:hover {
+    background: white;
+    color: black;
+}
+
+#fotitas {
+    background-color: rgb(219, 219, 219);
+    border: 4px solid rgb(109, 109, 109);
+}
+
+#tabelita {
+    background-color: rgb(220, 220, 255);
+}
+.pt-tur {
+    background-color: rgb(219, 219, 219);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-top: 4px solid rgb(109, 109, 109);
+    border-left: 4px solid rgb(109, 109, 109);
+    border-right: 4px solid rgb(109, 109, 109);
+}
+
+.parceiros {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.foto,
+.foto2,
+.foto3 {
+    width: 314px;
+    height: 368px;
+    padding: 2px;
+    box-sizing: border-box;
+}
+.galeria {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 160px;
+}
+.galeria2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+}
+.foto-btn,
+.foto-btn2,
+.foto-btn3 {
+    background-color: rgb(219, 219, 219);
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 314px;
+    box-sizing: border-box;
+}
+.foto2{
+    display: flex;
+    flex-direction: column; /* Mantém a imagem acima do texto */
+}
+.zap {
+    background-color: #C95E10;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding: 10px 10px;
+    align-items: center;
+}
